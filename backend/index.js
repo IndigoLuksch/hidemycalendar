@@ -1,3 +1,4 @@
+//
 import ICAL from 'node-ical';
 
 export default {
