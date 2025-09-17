@@ -1,6 +1,7 @@
 /* image */
 .header-icon {
     width: 500px;
+    max-width: 500px;
     height: auto;
     margin-bottom: 1rem;
     pointer-events: none; /* makes the image unclickable */
