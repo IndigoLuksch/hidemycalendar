@@ -48,7 +48,8 @@ export default {
         },
       });
     } catch (error) {
-      return new Response(`Failed to process calendar: ${error.message}`, { status: 500 });
+      console.error("An error occurred while processing a calendar."); 
+      return new Response("An error occurred while processing the calendar.", { status: 500 });
     }
   },
 };
