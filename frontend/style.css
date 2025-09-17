@@ -6,12 +6,13 @@ button { padding: 0.75rem 1.5rem; border: none; background-color: #007bff; color
 #result.hidden { display: none; }
 
 .privacy-badge {
-    margin-top: 2rem;
-    font-size: 0.8rem;
-    color: #6c757d;
+    margin-top: 4rem; /* Increased margin to push it lower */
+    font-size: 0.75rem; /* Slightly smaller font size */
+    color: #495057; /* A darker grey color */
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.8; /* Make it slightly transparent for subtlety */
 }
 
 .privacy-badge span {
