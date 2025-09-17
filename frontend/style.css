@@ -26,3 +26,21 @@ button { padding: 0.75rem 1.5rem; border: none; background-color: #007bff; color
 .privacy-badge span {
     margin-right: 0.5rem;
 }
+
+/*  mobile styles  */
+
+@media (max-width: 600px) {
+    main {
+        padding: 1.5rem; /* Reduce padding on the main box */
+        margin: 1rem;    /* Add some margin to the sides */
+        box-shadow: none;/* Remove the shadow for a flatter look */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Make the main heading smaller */
+    }
+
+    input[type="url"], input[type="text"] {
+        width: 100%; /* Make input fields take up the full width */
+    }
+}
