@@ -1,4 +1,12 @@
-/* Add some basic styling here to make it look nice */
+/* image */
+.header-icon {
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 1rem;
+    pointer-events: none; /* makes the image unclickable */
+    user-select: none;    /* prevents selecting the image */
+}
+
 body { font-family: sans-serif; display: grid; place-content: center; min-height: 100vh; background-color: #f0f2f5; }
 main { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; }
 input[type="url"], input[type="text"] { width: 90%; padding: 0.5rem; margin: 1rem 0; border: 1px solid #ccc; border-radius: 4px; }
