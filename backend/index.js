@@ -3,11 +3,15 @@ import ICAL from 'node-ical';
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    const icalUrl = url.searchParams.get('url');
+    const icalUrlParam = url.searchParams.get('url');
 
-    if (!icalUrl) {
+    // First, check if the parameter exists at all
+    if (!icalUrlParam) {
       return new Response("Error: Please provide a 'url' query parameter.", { status: 400 });
     }
+
+    // Now that we know it exists, we can safely replace the protocol
+    const icalUrl = icalUrlParam.replace("webcal://", "https://");
 
     try {
       // Fetch the original calendar data
