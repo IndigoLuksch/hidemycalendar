@@ -1,6 +1,6 @@
 /* image */
 .header-icon {
-    width: 280px; /* Adjust size as needed */
+    width: 500px; /* Adjust size as needed */
     height: auto;
     margin-bottom: 1rem;
     pointer-events: none; /* makes the image unclickable */
