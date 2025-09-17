@@ -17,7 +17,27 @@
             <input type="text" id="new-link" readonly>
             <button id="copy-btn">Copy</button>
         </div>
+        <main>
+            <h1>iCal Anonymizer 🔒</h1>
+            <p>Paste your iCal subscription link to get a private version with all events marked as 'Busy'.</p>
+            <input type="url" id="ical-url" placeholder="https://example.com/calendar.ics" required>
+            <button id="submit-btn">Generate Private Link</button>
+            <div id="result" class="hidden">
+                <p>Your new private link is:</p>
+                <input type="text" id="new-link" readonly>
+                <button id="copy-btn">Copy</button>
+            </div>
+            
+            <div class="privacy-badge">
+                <span>🛡️</span> No data is ever stored.
+            </div>
+        </main>
+        
+        <script src="script.js"></script>
+    </body>
+    </html>
     </main>
     <script src="script.js"></script>
 </body>
 </html>
+
