@@ -3,8 +3,7 @@ const resultDiv = document.getElementById('result');
 const newLinkInput = document.getElementById('new-link');
 const copyBtn = document.getElementById('copy-btn');
 
-// !!! PASTE YOUR WORKER URL HERE !!!
-const workerUrl = 'YOUR_WORKER_URL_HERE'; 
+const workerUrl = 'https://hidemycalendar.indigoluksch.workers.dev'; 
 
 submitBtn.addEventListener('click', () => {
     const icalUrlInput = document.getElementById('ical-url');
