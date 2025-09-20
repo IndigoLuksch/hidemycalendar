@@ -26,6 +26,9 @@ async function generateLink() {
     submitBtn.textContent = 'Generating...';
     resultDiv.classList.add('hidden');
 
+    // wait for 1 sec
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
     try {
         const response = await fetch(`${API_BASE_URL}/create`, {
             method: 'POST',
