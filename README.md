@@ -1,10 +1,8 @@
-# hidemycalendar
+# Hidemycalendar
 
-visit [hidemycalendar.com](https://hidemycalendar.com)
-
-anonymises event details from calendar subscription links
-
-mostly vibe coded
+Visit [hidemycalendar.com](https://hidemycalendar.com)
+Anonymises event details from calendar subscription links
+Mostly vibe coded
 
 ### How it works
 
