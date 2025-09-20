@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Security Works - iCal Anonymiser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="info-page">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <h1>How Security Works</h1>
+        
+        <p>
+            Text
+        </p>
+        </main>
+</body>
+</html>
