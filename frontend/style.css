@@ -99,33 +99,29 @@ button:disabled {
 }
 
 #result div {
-    display: flex; /* Aligns input and copy button */
-    align-items: stretch;
-    gap: 10px;
-    margin-bottom: 1rem;
+    display: flex;
+    gap: 8px;
 }
 
 #new-link {
-    flex-grow: 1; /* Input takes available space */
-    margin-bottom: 0;
-    border-radius: 6px;
+    flex-grow: 1; 
+    margin-bottom: 0; 
 }
 
 #copy-btn {
-    width: auto; /* Shrink to fit content */
-    border-radius: 6px;
-    padding: 0 20px; 
-    flex-shrink: 0;
+    width: auto;  
+    flex-shrink: 0; 
+    padding: 0 20px;
 }
 
 .privacy-badge {
-    margin-top: 5rem; /* Increased margin to push it lower */
-    font-size: 0.75rem; /* Slightly smaller font size */
-    color: #495057; /* A darker grey color */
+    margin-top: 5rem;
+    font-size: 0.75rem;
+    color: #495057;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.8; /* Make it slightly transparent for subtlety */
+    opacity: 0.8;
 }
 
 .privacy-badge span {
