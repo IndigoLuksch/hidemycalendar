@@ -18,6 +18,12 @@ code {
   font-family: "Courier New", Courier, monospace; 
 }
 
+ol li,
+ul li {
+  margin-bottom: 0.75rem; 
+  line-height: 1.6;
+}
+
 main {
     background: #ffffff;
     padding: 2.5rem;
