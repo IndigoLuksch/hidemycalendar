@@ -152,6 +152,7 @@ button:disabled {
   }
 
   main {
+    wdith: 92%;
     padding: 1.5rem;
   }
 }
