@@ -1,7 +1,9 @@
 # Hidemycalendar
 
 Visit [hidemycalendar.com](https://hidemycalendar.com)
+
 Anonymises event details from calendar subscription links
+
 Mostly vibe coded
 
 ### How it works
