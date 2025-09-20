@@ -13,7 +13,7 @@
         
         <ol>
             <li>A calendar subscription link is input </li>
-            <li>Using a secret key stored in Cloudflare's Secretes Store, the original URL is encrypted. A new, private URL of format <code>.../?url=<encrypted_url></code> is generated. The original URL is not stored </li>
+            <li>Using a secret key stored in Cloudflare's Secrets Store, the original URL is encrypted. A new, private URL of format <code>.../?url=encrypted_url</code> is generated. The original URL is not stored </li>
             <li>When a calendar application requests event information from the private URL, a Cloudflare worker decreypts the encrypted URL, fetches event details, modifies them to show only as 'Busy', and passes this on to the calendar application.</li>
         </ol>
         
