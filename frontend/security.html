@@ -11,17 +11,20 @@
         <a href="index.html" class="back-link">← Back to Home</a>
         <h1>How Security Works</h1>
         
-        <p>
-            1. A calendar subscription link is input <br>
-            2. Using a secret key stored in Cloudflare's Secretes Store, the original URL is encrypted. A new, private URL of format <code>.../?url=<encrypted_url></code> is generated. The original URL is not stored <br>
-            3. When a calendar application requests event information from the private URL, a Cloudflare worker decreypts the encrypted URL, fetches event details, modifies them to show only as 'Busy', and passes this on to the calendar application.
-            <br><br>
-            Key security features:<br>
-            • the original URL is not stored by Cloudflare <br>
-            • event details are not stored by Cloudflare <br>
-            • the original URL is present in the private URL in encrypted form <br> 
-            <br><br>
-            Please <a href="mailto:indigoluksch@pm.me?subject=Feedback%20on%20hidemycalendarr&body=Hi%20Indigo,">let me know</a> if you have any security upgrade suggestions!
+        </ol>
+            <li>A calendar subscription link is input </li>
+            <li>Using a secret key stored in Cloudflare's Secretes Store, the original URL is encrypted. A new, private URL of format <code>.../?url=<encrypted_url></code> is generated. The original URL is not stored </li>
+            <li>When a calendar application requests event information from the private URL, a Cloudflare worker decreypts the encrypted URL, fetches event details, modifies them to show only as 'Busy', and passes this on to the calendar application.</li>
+        </ol>
+        
+            <h3>Key security features:</h3>
+        <ul>
+            <li>the original URL is not stored by Cloudflare </li>
+            <li>event details are not stored by Cloudflare </li>
+            <li>the original URL is present in the private URL in encrypted form </li>
+        </ul>
+        <p>    
+            Please <a href="mailto:indigoluksch@pm.me?subject=Feedback%20on%20hidemycalendar&body=Hi%20Indigo,">let me know</a> if you have any security upgrade suggestions!
             
         </p>
         </main>
