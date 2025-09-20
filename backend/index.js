@@ -107,6 +107,14 @@ async function createEncryptedLink(request, env) {
     const workerUrl = new URL(request.url).origin;
     const privateUrl = `${workerUrl}/?cal=${base64String}`;
 
+    // --- Write data to Analytics Engine ---
+    if (env.ANALYTICS) {
+        env.ANALYTICS.writeDataPoint({
+            blobs: ["link_created"], // Event type
+            doubles: [1], // A metric to count, e.g., 1 for each event
+        });
+    }
+
     return new Response(JSON.stringify({ privateUrl }), { headers: { 'Content-Type': 'application/json', ...corsHeaders } });
   } catch (err) {
     console.error('Error in createEncryptedLink:', err);
