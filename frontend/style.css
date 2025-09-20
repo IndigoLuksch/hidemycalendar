@@ -156,3 +156,52 @@ button:disabled {
     padding: 1.5rem;
   }
 }
+
+
+
+/* footer */
+.main-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.main-footer a {
+    color: #606770;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+}
+
+/*  info pages */
+.info-page {
+    text-align: left;
+}
+
+.info-page h1 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-page p {
+    margin-bottom: 1rem;
+}
+
+/* "Back to Home" link */
+.back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
