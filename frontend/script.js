@@ -27,11 +27,20 @@ async function generateLink() {
     resultDiv.classList.add('hidden');
 
     try {
-        const response = await fetch(`${API_BASE_URL}/create`, {
+        // --- Start of new delay logic ---
+        // 1. Create a timer promise that resolves after 1 second (1000ms)
+        const timerPromise = new Promise(resolve => setTimeout(resolve, 1000));
+        
+        // 2. Create the fetch promise without awaiting it yet
+        const fetchPromise = fetch(`${API_BASE_URL}/create`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ url: originalUrl }),
         });
+
+        // 3. Wait for both the timer and the fetch request to complete
+        const [_, response] = await Promise.all([timerPromise, fetchPromise]);
+        // --- End of new delay logic ---
 
         const data = await response.json();
 
@@ -43,17 +52,6 @@ async function generateLink() {
         newLinkInput.value = data.privateUrl;
         resultParagraph.textContent = 'Your new private link is:';
         resultDiv.classList.remove('hidden');
-
-    } catch (err) {
-        // Error: display the error message
-        resultParagraph.textContent = 'Error: ' + err.message;
-        resultDiv.classList.remove('hidden');
-    } finally {
-        // Reset button state
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Generate Private Link';
-    }
-}
 
 /**
  * Copies the generated link to the clipboard
