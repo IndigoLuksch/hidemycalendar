@@ -10,6 +10,14 @@ body {
     color: #333;
 }
 
+code {
+  color: #d63384; 
+  background-color: #f1f1f1; 
+  padding: 2px 4px; 
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace; 
+}
+
 main {
     background: #ffffff;
     padding: 2.5rem;
@@ -143,6 +151,10 @@ button:disabled {
 .privacy-badge span {
     margin-right: 0.5rem;
 }
+
+
+
+
 
 
 /* for mobile: */ 
