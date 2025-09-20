@@ -159,6 +159,18 @@ button:disabled {
 
 
 
+
+
+.privacy-badge {
+    margin-top: 5rem;
+    font-size: 0.75rem;
+    color: #495057;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+
 /* footer */
 .main-footer {
     margin-top: 2rem;
@@ -170,8 +182,8 @@ button:disabled {
 }
 
 .main-footer a {
-    color: #606770;
-    font-size: 0.9rem;
+    color: #495057;
+    font-size: 0.75rem;
     text-decoration: none;
 }
 
@@ -196,8 +208,8 @@ button:disabled {
 /* "Back to Home" link */
 .back-link {
     display: inline-block;
-    margin-bottom: 1rem;
-    color: #1877f2;
+    margin-bottom: 0.75rem;
+    color: #495057;
     text-decoration: none;
     font-weight: 500;
 }
