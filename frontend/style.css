@@ -100,19 +100,22 @@ button:disabled {
 
 #result div {
     display: flex; /* Aligns input and copy button */
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 1rem;
 }
 
 #new-link {
     flex-grow: 1; /* Input takes available space */
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
     margin-bottom: 0;
+    border-radius: 6px;
 }
 
 #copy-btn {
     width: auto; /* Shrink to fit content */
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-radius: 6px;
+    padding: 0 20px; 
+    flex-shrink: 0;
 }
 
 .privacy-badge {
