@@ -89,7 +89,7 @@ button:disabled {
     margin-top: 1.5rem;
     border-top: 1px solid #e0e0e0;
     padding-top: 1.5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
 }
 
 #result.hidden {
@@ -112,6 +112,7 @@ button:disabled {
 }
 
 #copy-btn {
+    margin-top: 10rem;
     width: auto;
     padding-left: 20px;
     padding-right: 20px;
