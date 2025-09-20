@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Security Works - iCal Anonymiser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="info-page">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <h1>How Security Works</h1>
+        
+        <p>
+            1. A calendar subscription link is input <br>
+            2. Using a secret key stored in Cloudflare's Secretes Store, the original URL is encrypted. A new, private URL of format <code>.../?url=<encrypted_url></code> is generated. The original URL is not stored <br>
+            3. When a calendar application requests event information from the private URL, a Cloudflare worker decreypts the encrypted URL, fetches event details, modifies them to show only as 'Busy', and passes this on to the calendar application.
+        </p>
+        </main>
+</body>
+</html>
