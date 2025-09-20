@@ -109,10 +109,18 @@ button:disabled {
 }
 
 #copy-btn {
-    width: auto;  
-    flex-shrink: 0; 
-    padding: 0 20px;
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
+
 
 .privacy-badge {
     margin-top: 5rem;
