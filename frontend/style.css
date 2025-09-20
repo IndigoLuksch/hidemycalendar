@@ -62,7 +62,9 @@ input[type="text"]:focus {
 }
 
 button {
-    width: 100%;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
     padding: 14px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -87,7 +89,7 @@ button:disabled {
     margin-top: 1.5rem;
     border-top: 1px solid #e0e0e0;
     padding-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10rem;
 }
 
 #result.hidden {
@@ -111,6 +113,8 @@ button:disabled {
 
 #copy-btn {
     width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
     padding: 14px;
     font-size: 1.1rem;
     font-weight: bold;
